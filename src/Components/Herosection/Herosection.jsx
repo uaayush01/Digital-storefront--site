@@ -1,5 +1,5 @@
 
-import banner1 from "../../assets/banner1.jpg"
+import banner1 from "../../assets/banner.jpeg"
 const Herosection = () => {
   return (
    <>

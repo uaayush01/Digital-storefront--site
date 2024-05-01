@@ -1,5 +1,5 @@
 import Layout from "../../Components/Layout/Layout"
-const cart = () => {
+const Cart = ({cart}) => {
   return (
     <Layout>
       <div   className="w-[90%] mx-auto">
@@ -8,7 +8,7 @@ const cart = () => {
       <div className=" w-full g:w-3/4 bg-white px-10 py-10">
         <div className="flex justify-between border-b pb-8">
           <h1 className="font-semibold text-2xl">Shopping Cart</h1>
-          <h2 className="font-semibold text-2xl">3 Items</h2>
+          <h2 className="font-semibold text-2xl">{cart.length} Items</h2>
         </div>
         <div className="flex mt-10 mb-5">
           <h3 className="font-semibold text-gray-600 text-xs uppercase w-2/5">Product Details</h3>
@@ -62,7 +62,7 @@ const cart = () => {
           </select>
         </div>
         <div className="py-10">
-          <label for="promo" className="font-semibold inline-block mb-3 text-sm uppercase">Promo Code</label>
+          <label htmlFor="promo" className="font-semibold inline-block mb-3 text-sm uppercase">Promo Code</label>
           <input type="text" id="promo" placeholder="Enter your code" className="p-2 text-sm w-full"/>
         </div>
         <button className="bg-red-500 hover:bg-red-600 px-5 py-2 text-sm text-white uppercase">Apply</button>
@@ -81,4 +81,4 @@ const cart = () => {
   )
 }
 
-export default cart
+export default Cart

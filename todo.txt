@@ -1,0 +1,1 @@
+On home page we should change image with the images which change after every loading 
